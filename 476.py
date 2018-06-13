@@ -11,6 +11,7 @@ class Solution:
         :rtype: int
         """
         l=len(bin(num))-2 
+        #base=2
         a=int("1"*l,2)
         return num^a
 a=Solution()
