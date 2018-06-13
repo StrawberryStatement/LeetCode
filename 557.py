@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """
 Created on Wed Jun 13 16:42:03 2018
-
+557
 @author: trick150
 """
 class Solution():
