@@ -31,7 +31,7 @@ class Solution:
             if i=="+":
                 points.append(points[-1]+points[-2])
                 res.append(sum(points))
-            print(res[-1])
+            #print(res[-1])
         return res[-1]
 a=Solution()
 b=a.calPoints(["5","-2","4","C","D","9","+","+"])
