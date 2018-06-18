@@ -13,15 +13,18 @@ class Solution:
         :rtype: int
         """
         neb=[0,0,0,0]
-        for i in grid:
-            i.append(0)
-            i.insert(0,0)
-        grid.insert(0,[0]*(len(grid)+2))
+        #先append，否则会改变grid[0]长度
+        grid.append([0]*(len(grid[0])+2))
+        grid.insert(0,[0]*(len(grid[0])+2))
         #len(grid)已经改变(+1)
-        grid.append([0]*(len(grid)+1))  
+       # print(grid)
+        for i in range(1,len(grid)-1):
+            grid[i].append(0)
+            grid[i].insert(0,0)
+        #print(grid)
         num=0
-        for i in range(len(grid)):
-            for j in range(len(grid)):
+        for i in range(1,len(grid)-1):
+            for j in range(1,len(grid[0])-1):
                 print(len(grid))
                 if grid[i][j]==1:
                     if grid[i][j+1]==1:
@@ -43,9 +46,6 @@ class Solution:
                 num=0
         return sum(sum(i) for i in grid)*4-neb[0]*1-neb[1]*2-neb[2]*3-neb[3]*4  
 a=Solution()
-b=a.islandPerimeter([[0,1,0,0],
- [1,1,1,0],
- [0,1,0,0],
- [1,1,0,0]]
+b=a.islandPerimeter([[0,1,0,1],[0,1,1,1],[1,1,1,0],[0,1,1,1]]
 ) 
 print(b)    
