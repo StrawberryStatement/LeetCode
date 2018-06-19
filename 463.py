@@ -3,7 +3,7 @@
 Created on Mon Jun 18 17:22:48 2018
 
 463. Island Perimeter
-
+与弱copy无关，但复习了一下该部分知识
 @author: trick150
 """
 class Solution:
@@ -25,7 +25,7 @@ class Solution:
         num=0
         for i in range(1,len(grid)-1):
             for j in range(1,len(grid[0])-1):
-                print(len(grid))
+                #print(len(grid))
                 if grid[i][j]==1:
                     if grid[i][j+1]==1:
                         num+=1
