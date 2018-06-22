@@ -15,7 +15,11 @@ class Solution:
         :type nums: List[int]
         :rtype: int
         """
-        return 2*sum(set(nums))-sum(nums)
+        from collections import Counter
+        c=Counter(nums)
+        for i in nums:
+            if c[i]!=2:
+                return i
 a=Solution()
 b=a.singleNumber([4,3,4,1,2,1,2])   
 print(b)   
