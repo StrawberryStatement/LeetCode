@@ -10,6 +10,7 @@ class Solution(object):
         :type A: List[List[int]]
         :rtype: List[List[int]]
         """
+        #用下标做，感觉不够python...
         for i in range(len(A)):
             A[i]=A[i][::-1]        
         for j in range(len(A)):

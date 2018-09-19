@@ -10,6 +10,7 @@ class Solution(object):
         """
         :type A: List[List[int]]
         :rtype: List[List[int]]
+        #这个方法用的东西挺巧，再看都忘了
         """
         if len(A)==0:
             return A
