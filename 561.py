@@ -13,6 +13,7 @@ class Solution:
         """
         nums.sort()
         #sort 函数返回NoneType
+        #sum  已经可以将list中元素全部相加
         return sum(nums[::2])
 a=Solution()
 print(a.arrayPairSum([1,4,3,2]))
