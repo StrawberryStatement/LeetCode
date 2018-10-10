@@ -24,7 +24,7 @@ class Solution:
                     l.append(count)
                 else:
                     count=0
-        return max(l) if len(nums)>1 else 1
+        return max(l) 
 a=Solution()
 b=[0,1]
 print(a.findMaxConsecutiveOnes(b))
